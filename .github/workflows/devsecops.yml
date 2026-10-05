@@ -7,7 +7,7 @@ jobs:
       - name: Checkout du code
         uses: actions/checkout@v4
 
-      - name: Analyse des dépendances (requirements.txt) avec Trivy
+      - name: Analyse du requirements.txt avec Trivy
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'fs'
